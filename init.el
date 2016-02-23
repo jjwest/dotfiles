@@ -7,6 +7,10 @@
 (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/"))
 (package-initialize)
 
+;; Start in fullscreen mode
+(custom-set-variables
+ '(initial-frame-alist (quote ((fullscreen . maximized)))))
+
 ;;; yasnippet
 ;;; should be loaded before auto complete so that they can work together
 (require 'yasnippet)
@@ -17,8 +21,11 @@
 
 ;; ;; PROJECTILE
 (require 'projectile)
-(setq projectile-keymap-prefix (kbd "C-c C-p"))
 (projectile-global-mode)
+(setq projectile-keymap-prefix (kbd "C-c C-p"))
+(define-key projectile-mode-map (kbd "C-c C-p C-p") 'projectile-switch-project)
+(define-key projectile-mode-map (kbd "C-c C-p C-f") 'projectile-find-file)
+(define-key projectile-mode-map (kbd "C-c C-p C-t") 'projectile-toggle-between-implementation-and-test)
 
 ;; ;; C/C++ STYLE SETTINGS
 (setq-default indent-tabs-mode nil)
@@ -26,11 +33,13 @@
 (setq-default c-basic-offset 4)
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
 
-;; Make linums relative by default
-(linum-relative-global-mode 1)
-
 ;; AUTO DELETE-SELECTION
 (delete-selection-mode 1)
+
+;; SMOOTH SCROLLING
+(setq scroll-margin 5
+scroll-conservatively 9999
+scroll-step 1)
 
 ;; ;; IDO-configuration
 (require 'ido)
@@ -39,44 +48,64 @@
 ;; ;; FONTS
 (global-font-lock-mode 1) 
 
-;; MAGIT
-(global-set-key (kbd "C-x g") 'magit-status)
+
+;; EVIL MODE SETTINGS
+(global-evil-leader-mode)
+(evil-leader/set-leader ",")
+(evil-leader/set-key
+  "f" 'find-file
+  "b" 'switch-to-buffer
+  "k" 'kill-buffer
+  "pp" 'projectile-switch-project
+  "pf" 'projectile-find-file
+  "pk" 'projectile-kill-buffers
+  "ss" 'split-window-horizontally
+  "vv" 'split-window-vertically
+  "dw"  'delete-window
+  "do" 'delete-other-windows
+  "sf" 'save-buffer
+  "sa" 'save-some-buffers
+  "g" 'magit-status)
+
+
+(with-eval-after-load "evil"
+     (evil-set-initial-state 'dired-mode 'emacs)
+     (define-key evil-normal-state-map (kbd "C-h") 'evil-window-left)
+     (define-key evil-normal-state-map (kbd "C-j") 'evil-window-down)
+     (define-key evil-normal-state-map (kbd "C-k") 'evil-window-up)
+     (define-key evil-normal-state-map (kbd "C-l") 'evil-window-right)
+
+     (define-key evil-normal-state-map "\C-e" 'evil-end-of-line)
+     (define-key evil-insert-state-map "\C-e" 'end-of-line)
+     (define-key evil-visual-state-map "\C-e" 'evil-end-of-line)
+     (define-key evil-motion-state-map "\C-e" 'evil-end-of-line)
+     
+     (define-key evil-normal-state-map (kbd "M-k") (lambda ()
+                                                     (interactive)
+                                                     (evil-scroll-up nil)))
+     (define-key evil-normal-state-map (kbd "M-j") (lambda ()
+                        (interactive)
+                        (evil-scroll-down nil))))
+;; Clean modeline
+(require 'diminish)
+(diminish 'visual-line-mode)
+(with-eval-after-load 'undo-tree (diminish 'undo-tree-mode))
+(with-eval-after-load 'auto-complete (diminish 'auto-complete-mode))
+(with-eval-after-load  'projectile (diminish 'projectile-mode))
+(with-eval-after-load  'yasnippet (diminish 'yas-minor-mode))
+(with-eval-after-load  'eldoc (diminish 'eldoc-mode))
+(with-eval-after-load  'company (diminish 'company-mode))
+(with-eval-after-load 'magiter-load  (diminish 'magit-auto-revert-mode))
+(with-eval-after-load 'flycheck (diminish 'flycheck-mode))
 
 ;; POWERLINE
-(require 'powerline)
-(powerline-default-theme)
+(require 'powerline-evil)
+(powerline-evil-vim-color-theme)
+(display-time-mode t)
 
 ;; CMAKE
 (require 'rtags) ;; optional, must have rtags installed
 (cmake-ide-setup)
-
-;; GOD-MODE
-(global-set-key (kbd "<escape>") 'god-mode-all)
-(setq god-exempt-major-modes nil)
-(setq god-exempt-predicates nil)
-(require 'god-mode-isearch)
-(define-key isearch-mode-map (kbd "<escape>") 'god-mode-isearch-activate)
-(define-key god-mode-isearch-map (kbd "<escape>") 'god-mode-isearch-disable)
-(global-set-key (kbd "C-x C-1") 'delete-other-windows)
-(global-set-key (kbd "C-x C-2") 'split-window-below)
-(global-set-key (kbd "C-x C-3") 'split-window-right)
-(global-set-key (kbd "C-x C-0") 'delete-window)
-(add-to-list 'god-exempt-major-modes 'dired-mode)
-(defun c/god-mode-update-cursor ()
-  (let ((limited-colors-p (> 257 (length (defined-colors)))))
-    (cond (god-local-mode (progn
-                            (set-face-background 'mode-line (if limited-colors-p "white" "#e9e2cb"))
-                            (set-face-background 'mode-line-inactive (if limited-colors-p "white" "#e9e2cb"))))
-          (t (progn
-               (set-face-background 'mode-line (if limited-colors-p "black" "#0a2832"))
-               (set-face-background 'mode-line-inactive (if limited-colors-p "black" "#0a2832")))))))
-(defun my-update-cursor ()
-  (setq cursor-type (if (or god-local-mode buffer-read-only)
-                        'box
-                      'bar)))
-
-(add-hook 'god-mode-enabled-hook 'my-update-cursor)
-(add-hook 'god-mode-disabled-hook 'my-update-cursor)
 
 ;; IRONY
 (add-hook 'c++-mode-hook 'irony-mode)
@@ -107,6 +136,13 @@
 
 ;; Electric mode
 (electric-pair-mode 1)
+
+;; LINUM MODE
+(linum-relative-global-mode 1)
+
+;; Always show matching parenthesis
+(show-smartparens-global-mode 1)
+
 
 ;;; Syntax-checking ;;;;;;;;
 (add-hook 'after-init-hook #'global-flycheck-mode)
@@ -194,5 +230,25 @@
 
 
 ;; EVIL MODE
-;;(require 'evil)
-;;(evil-mode 1)
+(require 'evil)
+(evil-mode 1)
+
+
+;; esc quits
+(defun minibuffer-keyboard-quit ()
+  "Abort recursive edit.
+In Delete Selection mode, if the mark is active, just deactivate it;
+then it takes a second \\[keyboard-quit] to abort the minibuffer."
+  (interactive)
+  (if (and delete-selection-mode transient-mark-mode mark-active)
+      (setq deactivate-mark  t)
+    (when (get-buffer "*Completions*") (delete-windows-on "*Completions*"))
+    (abort-recursive-edit)))
+(define-key evil-normal-state-map [escape] 'keyboard-quit)
+(define-key evil-visual-state-map [escape] 'keyboard-quit)
+(define-key minibuffer-local-map [escape] 'minibuffer-keyboard-quit)
+(define-key minibuffer-local-ns-map [escape] 'minibuffer-keyboard-quit)
+(define-key minibuffer-local-completion-map [escape] 'minibuffer-keyboard-quit)
+(define-key minibuffer-local-must-match-map [escape] 'minibuffer-keyboard-quit)
+(define-key minibuffer-local-isearch-map [escape] 'minibuffer-keyboard-quit)
+(global-set-key [escape] 'evil-exit-emacs-state)

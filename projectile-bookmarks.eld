@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/projects/spacecraze/" "~/tdp007-laborationer/" "~/tdts04-laborationer/" "~/emacsconfig/")
+("~/.emacs.d/" "~/projects/spacecraze/" "~/tdts04-laborationer/" "~/tdp019-language/" "~/tdp007-laborationer/" "~/emacsconfig/")

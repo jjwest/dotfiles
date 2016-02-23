@@ -1,4 +1,4 @@
-;;; powerline-autoloads.el --- automatically extracted autoloads
+;;; evil-leader-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
@@ -8,4 +8,4 @@
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
 ;; End:
-;;; powerline-autoloads.el ends here
+;;; evil-leader-autoloads.el ends here

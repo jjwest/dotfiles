@@ -1,4 +1,24 @@
-((("nil" .
+((("magit-status" .
+   [1 0 0 0 0 0 0 0 0 0 0 0])
+  ("delete-other-windows" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("delete-window" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("p" .
+   [1])
+  ("eval" .
+   [1 0 0 0])
+  ("powerline-evil-vim-color-theme" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("a" .
+   [1])
+  ("projectile-find-file" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("projectile-switch-project" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0])
+  ("kbd" .
+   [1 0 0])
+  ("nil" .
    [1 0 0])
   ("length" .
    [3 0 0 0 0 0])
@@ -139,7 +159,7 @@
   ("Texture" .
    [1 0 0 0 0 0 0])
   ("s" .
-   [2])
+   [3])
   ("vector" .
    [6 0 1 2 0 0])
   ("laser_itr" .
@@ -289,6 +309,32 @@
   ("require" .
    [1 0 0 0 0 0 0])
   ("evil" .
-   [1 0 0 0])
+   [2 0 0 0])
   ("evil-mode" .
-   [1 0 0 0 0 0 0 0 0])))
+   [1 0 0 0 0 0 0 0 0])
+  ("projectile-toggle-between-implementation-and-test" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("global-linum-mode" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("eval-after-load" .
+   [3 0 0 0 0 0 0 0 1 0 0 0 0 0 2])
+  ("show-smartparens-global-mode" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("split-window-horizontally" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("split-window-vertically" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
+  ("save-buffer" .
+   [0 0 0 0 0 0 1 0 0 0 0])
+  ("save-some-buffers" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("projectile-kill-buffers" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("with-eval-after-load" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1])
+  ("flycheck-mode" .
+   [0 0 0 0 1 0 0 0 0 1 0 0 0])
+  ("diminish" .
+   [1 0 0 0 0 0 0 0])
+  ("flycheck" .
+   [1 0 0 0 0 0 0 0])))

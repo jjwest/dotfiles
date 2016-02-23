@@ -1,16 +1,3 @@
-ruby person.rb 
-ruby person.rb 
-ruby person.rb 
-ruby person.rb 
-ruby person.rb 
-ruby person.rb 
-ruby person.rb 
-ruby person.rb 
-ruby rdparse.rb 
-ruby rdparse.rb 
-ruby rdparse.rb 
-ruby rdparse.rb 
-ruby rdparse.rb 
 ruby rdparse.rb 
 ruby rdparse.rb 
 ruby rdparse.rb 
@@ -122,6 +109,19 @@ make
 ./a.out 
 make
 ./a.out 
+make
+./a.out 
+make
+./a.out 
+cd ../build/
+ls
+make
+./a.out 
+ruby tests.rb 
+cd ../DEL_01/
+ls
+ruby tests.rb 
+cd ../build/
 make
 ./a.out 
 make
