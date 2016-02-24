@@ -7,9 +7,6 @@
 (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/"))
 (package-initialize)
 
-;; Start in fullscreen mode
-(custom-set-variables
- '(initial-frame-alist (quote ((fullscreen . maximized)))))
 
 ;;; yasnippet
 ;;; should be loaded before auto complete so that they can work together
@@ -40,6 +37,9 @@
 (setq scroll-margin 5
 scroll-conservatively 9999
 scroll-step 1)
+
+;; GGTAGS
+(ggtags-mode 1)
 
 ;; ;; IDO-configuration
 (require 'ido)
@@ -75,7 +75,11 @@ scroll-step 1)
   "g" 'magit-status
   "e" 'evil-ace-jump-word-mode
   "l" 'evil-ace-jump-line-mode
-  "c" 'evil-ace-jump-char-mode)
+  "c" 'evil-ace-jump-char-mode
+  "pt" 'projectile-find-other-file
+  "qr" 'ggtags-query-replace
+  "r" 'replace-string
+  "x" 'eshell)
 
 (with-eval-after-load "evil"
      (evil-set-initial-state 'dired-mode 'emacs)
@@ -90,6 +94,8 @@ scroll-step 1)
      (define-key evil-insert-state-map "\C-e" 'end-of-line)
      (define-key evil-visual-state-map "\C-e" 'evil-end-of-line)
      (define-key evil-motion-state-map "\C-e" 'evil-end-of-line)
+
+     (setq evil-move-cursor-back nil)
      
      (define-key evil-normal-state-map (kbd "M-k") (lambda ()
                                                      (interactive)
@@ -160,7 +166,8 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 (electric-pair-mode 1)
 
 ;; LINUM MODE
-(linum-relative-global-mode 1)
+(add-hook 'prog-mode-hook 'linum-relative-mode)
+(add-hook 'text-mode-hook 'linum-relative-mode)
 
 ;; Always show matching parenthesis
 (show-smartparens-global-mode 1)
@@ -185,6 +192,7 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Source Code Pro" :foundry "adobe" :slant normal :weight semi-bold :height 98 :width normal))))
  '(linum ((t (:background "#222120" :foreground "#666462")))))
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -203,7 +211,6 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
  '(fci-rule-color "#3E3D31")
  '(flycheck-c/c++-gcc-executable nil)
  '(flycheck-gcc-language-standard "c++11")
- '(global-linum-mode nil)
  '(highlight-changes-colors (quote ("#FD5FF0" "#AE81FF")))
  '(highlight-tail-colors
    (quote
@@ -217,11 +224,31 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
      ("#3E3D31" . 100))))
  '(inhibit-startup-screen t)
  '(initial-buffer-choice t)
+ '(initial-frame-alist (quote ((fullscreen . maximized))))
  '(linum-format " %1i ")
  '(magit-diff-use-overlays nil)
  '(menu-bar-mode nil)
  '(pos-tip-background-color "#A6E22E")
  '(pos-tip-foreground-color "#272822")
+ '(projectile-other-file-alist
+   (quote
+    (("cpp" "h" "hpp" "ipp")
+     ("ipp" "h" "hpp" "cpp")
+     ("hpp" "h" "ipp" "cpp")
+     ("cxx" "h" "hxx" "ixx")
+     ("ixx" "h" "hxx" "cxx")
+     ("hxx" "h" "ixx" "cxx")
+     ("c" "h")
+     ("m" "h")
+     ("mm" "h")
+     ("h" "c" "cpp" "cc" "ipp" "hpp" "cxx" "ixx" "hxx" "m" "mm")
+     ("cc" "hh" "h")
+     ("hh" "cc")
+     ("vert" "frag")
+     ("frag" "vert")
+     (nil "lock" "gpg")
+     ("lock" "")
+     ("gpg" ""))))
  '(scroll-bar-mode nil)
  '(tool-bar-mode nil)
  '(tooltip-mode nil)

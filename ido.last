@@ -49,9 +49,9 @@
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/jonve547/.emacs.d/" (22220 56712 503994 142000) ".git/" "ido.last" ".gitignore" "irony/" "auto-save-list/" "init.el" "elpa/" "recentf" "snippets/" "projectile-bookmarks.eld" "ac-comphist.dat" "ido.last~" "themes/" "session.106d818783f8de07c8145470939546068700000020980034" "projectile.cache" "init.el~" "eshell/" "./" "url/" "../")
+ ("/home/jonve547/.emacs.d/" (22222 13927 409957 328000) ".git/" "ido.last" ".gitignore" "irony/" "auto-save-list/" "init.el" "elpa/" "recentf" "snippets/" "projectile-bookmarks.eld" "ac-comphist.dat" "ido.last~" "themes/" "session.106d818783f8de07c8145470939546068700000020980034" "projectile.cache" "init.el~" "eshell/" "./" "url/" "../")
 
- ("/home/jonve547/" (22220 55822 626604 935000) "Documents/" ".ICEauthority" ".bash_history" ".gksu.lock" ".local/" ".swp" ".emacs~" ".adobe/" "emacs-24.5/" ".dbus/" ".Xauthority" ".gnome2_private/" ".macromedia/" ".xsession-errors" ".fonts/" ".gnupg/" "emacsconfig/" ".profile" "Downloads/" ".ssh/" ".pip/" "tdp019-language/" ".gnome2/" ".viminfo" ".emacs.d/" ".wireshark/" ".bash_aliases" ".bash_logout" ".thunderbird/" ".mozilla/" "cert/" "tdp007-laborationer/" "tdts04-laborationer/" "Desktop/" ".gconf/" ".gitconfig" ".config/" ".cinnamon/" ".dmrc" "projects/" ".cache/" "./" ".linuxmint/" ".thumbnails/" ".nvidia-settings-rc" ".nv/" "../" ".gimp-2.8/" ".pki/")
+ ("/home/jonve547/" (22222 12391 433969 639000) ".ICEauthority" ".bash_history" ".gksu.lock" ".local/" ".swp" ".adobe/" "emacs-24.5/" ".dbus/" ".Xauthority" ".gnome2_private/" ".macromedia/" ".xsession-errors" ".fonts/" ".gnupg/" "emacsconfig/" ".profile" "Downloads/" ".ssh/" ".pip/" "tdp019-language/" ".gnome2/" ".viminfo" ".emacs.d/" ".wireshark/" ".bash_aliases" ".bash_logout" ".thunderbird/" ".mozilla/" "cert/" "tdp007-laborationer/" "tdts04-laborationer/" "Desktop/" ".gconf/" ".gitconfig" ".config/" ".cinnamon/" ".dmrc" "projects/" ".cache/" "./" ".linuxmint/" ".thumbnails/" ".nvidia-settings-rc" ".nv/" "../" ".gimp-2.8/" ".pki/")
 
  ("/home/jonve547/tdts04-laborationer/labb3/" (22220 18583 24051 599000) "tcp-ethereal-trace-1" "download_1_ack.txt" "upload_1_seq.txt" "download_1_seq.txt" "labb3.odt" "upload_1_ack.txt" "./" "../" "labb3.txt")
 
