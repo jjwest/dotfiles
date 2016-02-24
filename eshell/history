@@ -1,9 +1,3 @@
-ruby rdparse.rb 
-ruby rdparse.rb 
-ruby rdparse.rb 
-ruby rdparse.rb
-ruby rdparse.rb
-ruby rdparse.rb
 ruby rdparse.rb
 ruby rdparse.rb
 ruby rdparse.rb
@@ -124,5 +118,11 @@ ruby tests.rb
 cd ../build/
 make
 ./a.out 
+make
+./a.out 
+cd ../build/
+make
+./a.out 
+cd ../build/
 make
 ./a.out 
