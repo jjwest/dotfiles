@@ -13,8 +13,8 @@
 (require 'yasnippet)
 (yas-global-mode 1)
 
-;;;;  AUTOCOMPLETE
-(ac-config-default)
+;; COMPANY MODE
+(global-company-mode)
 
 ;; ;; PROJECTILE
 (require 'projectile)
@@ -39,7 +39,7 @@ scroll-conservatively 9999
 scroll-step 1)
 
 ;; GGTAGS
-(ggtags-mode 1)
+(add-hook 'prog-mode-hook 'ggtags-mode)
 
 ;; ;; IDO-configuration
 (require 'ido)
@@ -79,7 +79,9 @@ scroll-step 1)
   "pt" 'projectile-find-other-file
   "qr" 'ggtags-query-replace
   "r" 'replace-string
-  "x" 'eshell)
+  "x" 'eshell
+  "jd" 'ggtags-find-definition
+  "?" 'ggtags-show-definition)
 
 (with-eval-after-load "evil"
      (evil-set-initial-state 'dired-mode 'emacs)
@@ -157,6 +159,10 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
       (define-key irony-mode-map [remap complete-symbol]
         'irony-completion-at-point-async))
     (add-hook 'irony-mode-hook 'my-irony-mode-hook)
+
+(require 'company)
+(eval-after-load 'company
+  '(add-to-list 'company-backends 'company-irony))
 
 ;;; Disable auto-save and backups
 (setq auto-save-default nil)

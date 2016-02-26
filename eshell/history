@@ -1,18 +1,3 @@
-ruby tester.rb 
-ruby tester.rb 
-ruby tester.rb 
-ruby tester.rb 
-ruby tester.rb 
-ruby tester.rb 
-cd ..
-gtags -r
-gtags -v
-cd ../build/
-ls
-make
-./a.out 
-make
-./a.out 
 make
 ./a.out 
 makle
@@ -126,3 +111,18 @@ cd ../build/
 make
 ./a.out 
 ./a.out 
+cd ../build/
+make
+make
+make
+cd ../build/
+make
+cd ../build/
+ls
+make
+cd ../build/
+ls
+cd ../build/
+ls
+make clean
+ls

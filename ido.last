@@ -14,10 +14,10 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/jonve547/projects/spacecraze/"
  "/home/jonve547/projects/spacecraze/src/"
  "/home/jonve547/projects/spacecraze/include/"
  "/home/jonve547/"
- "/home/jonve547/projects/spacecraze/"
  "/home/jonve547/tdts04-laborationer/labb3/"
  "/home/jonve547/.emacs.d/"
  "/home/jonve547/tdp019-language/"
@@ -35,25 +35,27 @@
 
 ;; ----- ido-work-file-list -----
 (
+ ".clang_complete"
+ "game_object.cc"
+ "sprite.cc"
+ "game_object.h"
+ "sprite.h"
  "object_factory.cc"
  "object_factory.h"
  "test.cc"
  "enemy_factory.h"
  "enemy_factory.cc"
- "planering.txt"
- "labb3.txt"
- "init.el"
- "bnf.txt"
- "tests.rb"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/jonve547/projects/spacecraze/src/" (22223 4706 165471 455000) "game.cc" "music.cc" "enemy.cc" "aabb.cc" "laser_manager.cc" "world.cc" "enemy_manager.cc" "player.cc" "play.cc" "font.cc" "blaster.cc" "asset_manager.cc" "laser.cc" "main.cc" "texture.cc" "drone.cc" "enemy_factory.cc" "./" "enemy_generator.cc" "asteroid.cc" "game_object.cc" "../")
+ ("/home/jonve547/projects/spacecraze/src/" (22224 39790 40219 83000) "game.cc" "music.cc" "enemy.cc" "aabb.cc" "world.cc" "sprite.cc" "object_factory.cc" "player.cc" "play.cc" "font.cc" "blaster.cc" "asset_manager.cc" "laser.cc" "main.cc" "texture.cc" "drone.cc" "./" "enemy_generator.cc" "asteroid.cc" "game_object.cc" "../")
 
- ("/home/jonve547/projects/spacecraze/include/" (22223 2436 593462 799000) "play.h" "enemy_generator.h" "point.h" "gamestate.h" "enemy_factory.h" "enemy_manager.h" "player.h" "drone.h" "music.h" "enemy.h" "laser_manager.h" "game.h" "asteroid.h" "texture.h" "constants.h" "aabb.h" "laser.h" "blaster.h" "enums.h" "user_interface.h" "font.h" "./" "game_object.h" "asset_manager.h" "world.h" "../")
+ ("/home/jonve547/" (22224 38992 60225 479000) ".ICEauthority" ".bash_history" ".gksu.lock" ".local/" ".swp" ".adobe/" "emacs-24.5/" ".dbus/" ".Xauthority" ".gnome2_private/" ".macromedia/" ".xsession-errors" ".fonts/" ".java/" ".gnupg/" ".profile" "Downloads/" ".ssh/" ".pip/" "tdp019-language/" ".umlet/" ".gnome2/" ".viminfo" ".emacs.d/" ".wireshark/" ".bash_aliases" ".bash_logout" ".thunderbird/" ".mozilla/" "cert/" "tdp007-laborationer/" "tdts04-laborationer/" "Desktop/" ".gconf/" ".gitconfig" ".config/" ".cinnamon/" ".dmrc" "projects/" ".cache/" "./" ".linuxmint/" ".thumbnails/" ".nvidia-settings-rc" ".nv/" "../" ".gimp-2.8/" ".kde/" ".pki/")
 
- ("/home/jonve547/" (22223 1201 473458 88000) ".ICEauthority" ".bash_history" ".gksu.lock" ".local/" ".swp" ".adobe/" "emacs-24.5/" ".dbus/" ".Xauthority" ".gnome2_private/" ".macromedia/" ".xsession-errors" ".fonts/" ".gnupg/" ".profile" "Downloads/" ".ssh/" ".pip/" "tdp019-language/" ".gnome2/" ".viminfo" ".emacs.d/" ".wireshark/" ".bash_aliases" ".bash_logout" ".thunderbird/" ".mozilla/" "cert/" "tdp007-laborationer/" "tdts04-laborationer/" "a.out" "Desktop/" ".gconf/" ".gitconfig" "test.cc" ".config/" ".cinnamon/" ".dmrc" "projects/" ".cache/" "./" ".linuxmint/" ".thumbnails/" ".nvidia-settings-rc" ".nv/" "../" ".gimp-2.8/" ".pki/")
+ ("/home/jonve547/projects/spacecraze/" (22224 37441 584237 906000) ".git/" "highscore.txt" ".gitignore" ".projectile" "GRTAGS" "GTAGS" ".clang_complete" "GPATH" "GSYMS" "sounds/" "sprites/" "src/" "include/" "fonts/" "build/" "README.md" "./" "../")
+
+ ("/home/jonve547/projects/spacecraze/include/" (22224 31500 224285 524000) "play.h" "enemy_generator.h" "point.h" "gamestate.h" "sprite.h" "player.h" "drone.h" "music.h" "enemy.h" "object_factory.h" "game.h" "asteroid.h" "texture.h" "constants.h" "aabb.h" "laser.h" "blaster.h" "enums.h" "user_interface.h" "font.h" "./" "game_object.h" "asset_manager.h" "world.h" "../")
 
  ("/home/jonve547/projects/" (22221 61345 680476 427000) "spacecraze/" "./" "../")
 
@@ -70,8 +72,6 @@
  ("/home/jonve547/tdp019-language/" (22220 12833 359 733000) ".git/" "bnf.txt" "./" "../")
 
  ("/home/jonve547/.emacs.d/" (22222 60454 469434 123000) ".git/" "ido.last" ".gitignore" "irony/" "auto-save-list/" "init.el" "elpa/" "recentf" "snippets/" "projectile-bookmarks.eld" "ac-comphist.dat" "ido.last~" "themes/" "session.106d818783f8de07c8145470939546068700000020980034" "projectile.cache" "init.el~" "eshell/" "./" "url/" "../")
-
- ("/home/jonve547/projects/spacecraze/" (22222 13130 581963 715000) ".git/" "highscore.txt" ".gitignore" ".projectile" "GRTAGS" "GTAGS" "GPATH" "GSYMS" "sounds/" "sprites/" "src/" "include/" "fonts/" "build/" "README.md" "./" "../")
 
  ("/home/jonve547/tdts04-laborationer/labb3/" (22222 58613 945427 103000) "tcp-ethereal-trace-1" "download_1_ack.txt" "upload_1_seq.txt" "download_1_seq.txt" "labb3.odt" "upload_1_ack.txt" "filtered_573_packets_anonymized.pcap" "./" "../" "labb3.txt")
 
