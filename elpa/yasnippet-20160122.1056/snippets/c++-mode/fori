@@ -2,7 +2,7 @@
 # name: fori
 # key: fori
 # --
-for (auto ${1:i} : ${2:var}) 
+for (auto& ${1:i} : ${2:var}) 
 {
     $0
 }

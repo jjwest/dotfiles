@@ -15,6 +15,8 @@
 
 ;; COMPANY MODE
 (global-company-mode)
+(setq company-idle-delay 0.4)
+(setq company-minimum-prefix-length 2)
 
 ;; ;; PROJECTILE
 (require 'projectile)
@@ -81,7 +83,12 @@ scroll-step 1)
   "r" 'replace-string
   "x" 'eshell
   "jd" 'ggtags-find-definition
-  "?" 'ggtags-show-definition)
+  "?" 'ggtags-show-definition
+  "dir" 'dired)
+
+;; EVIL SURROUND
+(require 'evil-surround)
+(global-evil-surround-mode 1)
 
 (with-eval-after-load "evil"
      (evil-set-initial-state 'dired-mode 'emacs)
@@ -148,8 +155,8 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 
 ;; IRONY
 (add-hook 'c++-mode-hook 'irony-mode)
-    (add-hook 'c-mode-hook 'irony-mode)
-    (add-hook 'objc-mode-hook 'irony-mode)
+(add-hook 'c-mode-hook 'irony-mode)
+(add-hook 'objc-mode-hook 'irony-mode)
 
     ;; replace the `completion-at-point' and `complete-symbol' bindings in
     ;; irony-mode's buffers by irony-mode's asynchronous function
@@ -163,6 +170,17 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 (require 'company)
 (eval-after-load 'company
   '(add-to-list 'company-backends 'company-irony))
+(require 'company-irony-c-headers)
+   ;; Load with `irony-mode` as a grouped backend
+   (eval-after-load 'company
+     '(add-to-list
+       'company-backends '(company-irony-c-headers company-irony)))
+
+;; INF-RUBY
+(add-hook 'ruby-mode-hook 'inf-ruby-mode)
+(require 'company)
+(eval-after-load 'company
+  '(add-to-list 'company-backends 'company-inf-ruby))
 
 ;;; Disable auto-save and backups
 (setq auto-save-default nil)
