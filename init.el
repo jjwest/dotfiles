@@ -14,8 +14,8 @@
 (yas-global-mode 1)
 
 ;; COMPANY MODE
-(global-company-mode)
-(setq company-idle-delay 0.4)
+(add-hook 'prog-mode-hook 'company-mode-on)
+(setq company-idle-delay 0)
 (setq company-minimum-prefix-length 2)
 
 ;; ;; PROJECTILE
@@ -31,6 +31,10 @@
 (setq c-default-style "bsd") 
 (setq-default c-basic-offset 4)
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
+
+;; RUST SETTINGS
+(add-hook 'rust-mode-hook 'company-mode-set-explicitly 0)
+(add-hook 'rust-mode-hook 'flycheck-mode -1)
 
 ;; AUTO DELETE-SELECTION
 (delete-selection-mode 1)
