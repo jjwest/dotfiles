@@ -47,6 +47,7 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "test.rb"
  "report.pdf"
  ".bash_aliases"
  ".bashrc"
@@ -56,26 +57,25 @@
  "RouterSimulator.java"
  "RouterNode.java"
  ".bash_rc"
- "GuiTextArea.java"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/home/jonve547/" (22236 13701 336260 942000) ".bash_logout" ".nvidia-settings-rc" ".gnome2_private/" ".profile" ".Xauthority" ".dmrc" ".bashrc" ".cache/" "../" ".cinnamon/" ".local/" ".gksu.lock" ".gconf/" ".ICEauthority" ".gnupg/" ".java/" "tdts04-laborationer/" ".config/" ".linuxmint/" ".ssh/" ".xsession-errors" ".gitconfig" ".mozilla/" ".emacs.d/" ".macromedia/" "./" "wallpapers/" "Downloads/" "Desktop/" ".nv/" ".bash_history" ".adobe/" "projects/" ".dbus/" ".gnome2/")
+
+ ("/home/jonve547/projects/spacecraze/" (22236 5726 720952 65000) "GTAGS" "GPATH" "src/" ".dir-locals.el" "GRTAGS" "../" "README.md" ".clang_complete" "sprites/" "sounds/" "script.py" ".git/" "fonts/" ".projectile" "a.out" "Makefile" "./" ".gitignore" "todo.org" "build/" "include/")
+
+ ("/home/jonve547/projects/spacecraze/include/" (22236 2114 304981 17000) "constants.h" "world.h" "enums.h" "blaster.h" "point.h" "enemy.h" "asteroid.h" "../" "sprite.h" "drone.h" "font.h" "object_factory.h" "game_object.h" "music.h" "player.h" "texture.h" "asset_manager.h" "game_world.h" "enemy_generator.h" "aabb.h" "./" "gamestate.h" "laser.h" "user_interface.h" "play.h" "game.h" "laser_manager.h")
+
  ("/home/jonve547/.emacs.d/themes/" (22236 4552 632961 475000) "tomorrow-night-blue-theme.el" "graham-theme.el" "../" "tomorrow-night-theme.el" "blackboard-theme.el" "rippedcasts-theme-source-code.el" "color-theme-tomorrow.el" "tomorrow-day-theme.el" "gruvbox-dark-theme.el" "./" "tomorrow-night-eighties-theme.el" "tomorrow-night-bright-theme.el")
 
  ("/home/jonve547/.emacs.d/" (22236 4562 148961 398000) "projectile-bookmarks.eld" "init.el" "recentf" "../" "ido.last~" "session.106d818783f8de07c8145470939546068700000020980034" "ido.last" "smex-items" "ac-comphist.dat" "init.el~" ".git/" "snippets/" "eshell/" "auto-save-list/" "./" "themes/" "projectile.cache" "irony/" ".gitignore" "url/" "elpa/")
 
- ("/home/jonve547/" (22236 4541 624961 563000) ".bash_logout" ".nvidia-settings-rc" ".gnome2_private/" ".profile" "gruvbox-dark-emacs/" ".Xauthority" ".dmrc" ".bashrc" ".cache/" "../" ".cinnamon/" ".local/" ".gksu.lock" ".gconf/" ".ICEauthority" ".gnupg/" ".java/" "tdts04-laborationer/" ".config/" ".linuxmint/" ".ssh/" ".xsession-errors" ".mozilla/" ".emacs.d/" ".macromedia/" "./" "wallpapers/" "Downloads/" "Desktop/" ".nv/" ".bash_history" ".adobe/" "projects/" ".dbus/" ".gnome2/")
-
  ("/home/jonve547/tdts04-laborationer/labb2/" (22235 20525 6632 800000) "../" "user_manual.odt" "proxy.py" "report.pdf" "lab2.tar.gz" "./" "report.odt")
-
- ("/home/jonve547/projects/spacecraze/" (22235 22996 35888 996000) "src/" "../" "README.md" ".clang_complete" "sprites/" "sounds/" "script.py" ".git/" "fonts/" ".projectile" "Makefile" "./" ".gitignore" "todo.org" "build/" "include/")
 
  ("/home/jonve547/projects/spacecraze/src/" (22235 21422 407901 608000) "music.cc" "game_object.cc" "laser_manager.cc" "../" "enemy_generator.cc" "object_factory.cc" "asset_manager.cc" "aabb.cc" "play.cc" "drone.cc" "world.cc" "player.cc" "main.cc" "texture.cc" "asteroid.cc" "./" "enemy.cc" "sprite.cc" "blaster.cc" "font.cc" "laser.cc" "game.cc")
 
  ("/home/jonve547/projects/spacecraze/build/" (22235 22089 399896 263000) "../" "Makefile" "./")
-
- ("/home/jonve547/projects/spacecraze/include/" (22235 21422 327901 609000) "constants.h" "world.h" "enums.h" "blaster.h" "point.h" "enemy.h" "asteroid.h" "../" "sprite.h" "drone.h" "font.h" "object_factory.h" "game_object.h" "music.h" "player.h" "texture.h" "asset_manager.h" "game_world.h" "enemy_generator.h" "aabb.h" "./" "gamestate.h" "laser.h" "user_interface.h" "play.h" "game.h" "laser_manager.h")
 
  ("/home/jonve547/projects/" (22235 21417 447901 648000) "../" "spacecraze/" "./")
 
