@@ -1,0 +1,26 @@
+
+;; ----- smex-history -----
+(
+ load-theme
+ linum-relative-mode
+ list-packages
+ menu-bar-options-save
+ menu-bar-mode
+ delete-selection-repeat-replace-region
+ ggtags-create-tags
+)
+
+;; ----- smex-data -----
+(
+ (list-packages . 7)
+ (menu-bar-mode . 4)
+ (menu-bar-options-save . 2)
+ (ido-find-file . 1)
+ (term . 1)
+ (yas-minor-mode-on . 1)
+ (yas-minor-mode . 1)
+ (ggtags-create-tags . 2)
+ (load-theme . 19)
+ (delete-selection-repeat-replace-region . 1)
+ (linum-relative-mode . 2)
+)

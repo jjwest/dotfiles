@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/tdts04-laborationer/" "~/projects/spacecraze/" "~/projects/dining_philosophers/" "~/projects/guessing_game/" "~/tdp019-language/" "~/tdp007-laborationer/" "~/projects/hello_world/" "~/TDP005-spel/" "~/emacsconfig/")
+("~/.emacs.d/" "~/projects/spacecraze/" "~/tdts04-laborationer/")
