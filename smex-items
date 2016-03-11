@@ -1,27 +1,36 @@
 
 ;; ----- smex-history -----
 (
- menu-bar-options-save
+ yas-global-mode
+ yas-minor-mode-on
  load-theme
- landmark
- linum-relative-mode
- list-packages
  menu-bar-mode
- delete-selection-repeat-replace-region
+ ggtags-create-tags
+ menu-bar-options-save
+ tetris
 )
 
 ;; ----- smex-data -----
 (
- (list-packages . 7)
- (menu-bar-mode . 4)
- (menu-bar-options-save . 3)
+ (list-packages . 9)
+ (menu-bar-mode . 6)
+ (menu-bar-options-save . 5)
  (ido-find-file . 1)
  (term . 1)
- (yas-minor-mode-on . 1)
- (yas-minor-mode . 1)
- (ggtags-create-tags . 2)
- (load-theme . 25)
+ (yas-minor-mode-on . 4)
+ (yas-minor-mode . 5)
+ (ggtags-create-tags . 4)
+ (load-theme . 55)
  (delete-selection-repeat-replace-region . 1)
  (linum-relative-mode . 2)
  (landmark . 1)
+ (eshell . 1)
+ (customize-variable . 3)
+ (customize-face . 4)
+ (tmm-menubar . 1)
+ (company-mode . 2)
+ (yas-global-mode . 7)
+ (customize-group . 2)
+ (butterfly . 2)
+ (tetris . 1)
 )

@@ -161,6 +161,9 @@
    ;; eshell
    `(eshell-prompt ((t (:inherit minibuffer-prompt))))
 
+   ;; ansi-term
+   `(term-prompt ((t (:inherit minibuffer-prompt))))
+
    ;; which-function-mode
    `(which-func ((t :inherit font-lock-function-name-face)))
 
