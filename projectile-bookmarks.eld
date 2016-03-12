@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/tdts04-laborationer/" "~/i3-4.12/" "~/projects/spacecraze/" "~/tdp007-laborationer/" "~/tdp019-language/")
+("~/.emacs.d/" "~/projects/scrabble/" "~/projects/spacecraze/" "~/Downloads/global-6.5.2/")

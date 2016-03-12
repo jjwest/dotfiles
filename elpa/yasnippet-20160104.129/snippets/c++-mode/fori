@@ -1,7 +1,0 @@
-# -*- mode: snippet -*-
-# name: fori
-# key: fori
-# --
-for (${1:auto it} : ${2:var}) {
-    $0
-}
