@@ -23,6 +23,8 @@
 ;;; yasnippet
 ;;; should be loaded before auto complete so that they can work together
 (yas-global-mode)
+(add-hook 'term-mode-hook (lambda()
+        (setq yas-dont-activate t)))
 
 ;; COMPANY MODE
 (add-hook 'prog-mode-hook 'company-mode-on)
