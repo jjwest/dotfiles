@@ -2,4 +2,6 @@
 # name: cin
 # key: cin
 # --
-cin >> $0;
+`(progn (save-excursion) (goto-char (point-min)) (unless (re-search-forward
+"^using\\s-+namespace std;" nil 'no-errer) "std::"))
+`cin >> ${1:var};$0

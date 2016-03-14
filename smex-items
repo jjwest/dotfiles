@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
- list-packages
+ irony-cdb-menu
  customize-group
- flycheck-verify-setup
- add-dir-local-variable
- ggtags-create-tags
- yas-global-mode
+ irony-mode
+ irony-install-server
+ projectile-cleanup-known-projects
  load-theme
+ irony-version
 )
 
 ;; ----- smex-data -----
@@ -19,8 +19,8 @@
  (term . 1)
  (yas-minor-mode-on . 4)
  (yas-minor-mode . 5)
- (ggtags-create-tags . 7)
- (load-theme . 56)
+ (ggtags-create-tags . 8)
+ (load-theme . 65)
  (delete-selection-repeat-replace-region . 1)
  (linum-relative-mode . 2)
  (landmark . 1)
@@ -28,15 +28,19 @@
  (customize-variable . 3)
  (customize-face . 4)
  (tmm-menubar . 1)
- (company-mode . 2)
+ (company-mode . 4)
  (yas-global-mode . 9)
- (customize-group . 5)
+ (customize-group . 6)
  (butterfly . 2)
  (tetris . 1)
- (projectile-cleanup-known-projects . 1)
+ (projectile-cleanup-known-projects . 2)
  (conf-mode . 1)
  (text-mode . 1)
  (version . 1)
  (flycheck-verify-setup . 8)
  (add-dir-local-variable . 5)
+ (irony-version . 1)
+ (irony-install-server . 3)
+ (irony-mode . 2)
+ (irony-cdb-menu . 2)
 )

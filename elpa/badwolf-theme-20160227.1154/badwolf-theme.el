@@ -80,10 +80,10 @@
    `(font-lock-string-face ((t (:foreground ,dirtyblonde))))
    `(font-lock-type-face ((t (:foreground ,dress))))
    `(font-lock-variable-name-face ((t (:foreground ,plain))))
-   `(font-lock-warning-face ((t (:foreground ,dress :weight bold))))
+   `(font-lock-warning-face ((t (:foreground ,lime :weight bold))))
    `(shadow ((t (:foreground ,mediumgravel))))
    `(success ((t (:foreground ,lime))))
-   `(error ((t (:foreground ,dress :weight bold))))
+   `(error ((t (:foreground ,lime :weight bold))))
    `(warning ((t (:foreground ,orange))))
 
    ;; ui

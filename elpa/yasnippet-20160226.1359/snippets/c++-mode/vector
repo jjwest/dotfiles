@@ -2,4 +2,6 @@
 # name: vector
 # key: vec
 # --
-std::vector<${1:Class}> ${2:var}${3:(${4:10}, $1($5))};
+`(progn (save-excursion) (goto-char (point-min)) (unless (re-search-forward
+"^using\\s-+namespace std;" nil 'no-errer) "std::"))
+`vector<${1:Class}> ${2:var}; $0

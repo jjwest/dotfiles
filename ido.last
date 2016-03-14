@@ -2,6 +2,8 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/jonve547/projects/cards/" . "src/")
+ ("/home/jonve547/projects/spacerust/" . "src/")
  ("/home/jonve547/projects/scrabble/" . "src/")
  ("/home/jonve547/.config/" . "i3/")
  ("/home/jonve547/tdts04-laborationer/labb5/orb.db/" . "logs/")
@@ -9,7 +11,7 @@
  ("/home/jonve547/projects/dining_philosophers/" . "src/")
  ("/home/jonve547/projects/guessing_game/" . "src/")
  ("/home/jonve547/projects/hello_world/" . "src/")
- ("/home/jonve547/projects/" . "scrabble/")
+ ("/home/jonve547/projects/" . "cards/")
  ("/home/jonve547/.emacs.d/elpa/yasnippet-20160122.1056/snippets/" . "c++-mode/")
  ("/home/jonve547/.emacs.d/elpa/yasnippet-20160122.1056/" . "snippets/")
  ("/home/jonve547/tdp007-laborationer/opponering3/" . "DEL_01/")
@@ -18,16 +20,20 @@
  ("/home/jonve547/duggaplugg/" . "dugga2/")
  ("/home/jonve547/tdp007-laborationer/" . "labb4/")
  ("/home/jonve547/tdts04-laborationer/" . "labb5/")
- ("/home/jonve547/" . "projects/")
+ ("/home/jonve547/" . ".config/")
  ("/home/jonve547/projects/spacecraze/" . "include/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/jonve547/.config/i3/"
+ "/home/jonve547/projects/cards/src/"
+ "/home/jonve547/projects/spacerust/src/"
+ "/home/jonve547/projects/guessing_game/src/"
+ "/home/jonve547/projects/spacerust/"
  "/home/jonve547/projects/scrabble/src/"
  "/home/jonve547/projects/scrabble/"
  "/home/jonve547/projects/"
- "/home/jonve547/.config/i3/"
  "/home/jonve547/projects/spacecraze/"
  "/home/jonve547/.emacs.d/"
  "/home/jonve547/tdts04-laborationer/labb5/"
@@ -50,7 +56,6 @@
  "/home/jonve547/projects/spacecraze/include/"
  "/home/jonve547/projects/dining_philosophers/src/"
  "/home/jonve547/tdp007-laborationer/labb3/"
- "/home/jonve547/projects/guessing_game/src/"
  "/home/jonve547/projects/hello_world/src/"
  "/home/jonve547/.emacs.d/elpa/yasnippet-20160122.1056/snippets/c++-mode/"
  "/home/jonve547/tdts04-laborationer/labb3/"
@@ -63,9 +68,9 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "config"
  "main.rs"
  "Cargo.toml"
- "config"
  "init.el"
  "Makefile"
  "ChatServer.java"
@@ -77,19 +82,33 @@
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/home/jonve547/" (22246 51502 492650 578000) ".xinitrc" ".fehbg" ".cache/" ".fonts/" ".dmrc" "./" ".gtkrc-2.0" ".profile" ".gvfs/" ".emacs.d/" ".Xauthority" ".ICEauthority" ".mozilla/" ".adobe/" "tenta/" ".pki/" "Downloads/" "wallpapers/" "../" ".gconf/" ".gksu.lock" ".bash_logout" ".icons/" ".cargo/" ".bash_history" ".sudo_as_admin_successful" ".viminfo" ".bashrc" ".gitconfig" ".config/" "projects/" "Public/" ".macromedia/" "Desktop/" ".dbus/" ".ssh/" ".xsession-errors" ".xsession-errors.old" ".local/" ".gnupg/" "dotfiles/" "tdts04-laborationer/")
+
+ ("/home/jonve547/.config/i3/" (22245 19371 652972 561000) "./" "../" "config")
+
+ ("/home/jonve547/.config/" (22244 23498 75189 584000) "./" "unity/" "xfce4/" "cef_user_data/" "ibus/" "update-notifier/" "../" "user-dirs.dirs" "gnome-session/" "upstart/" "gedit/" "libaccounts-glib/" "pulse/" ".git/" "nautilus/" "enchant/" "dconf/" "evolution/" "Thunar/" "gtk-2.0/" "mimeapps.list" "spotify/" "user-dirs.locale" "i3/" "compiz-1/" "gtk-3.0/")
+
+ ("/home/jonve547/projects/spacecraze/" (22245 18419 815544 779000) ".clang_complete" "GPATH" "./" "GTAGS" ".dir-locals.el" "build/" "../" "src/" "fonts/" "include/" ".git/" "sprites/" "README.md" "GRTAGS" ".gitignore" "sounds/" "Makefile" "todo.org" ".projectile" "GSYMS" "a")
+
+ ("/home/jonve547/projects/cards/src/" (22244 40706 782166 955000) "./" "../" "main.rs")
+
+ ("/home/jonve547/projects/cards/" (22244 40706 782166 955000) "./" "../" "src/" "Cargo.toml" ".git/" ".gitignore")
+
+ ("/home/jonve547/projects/" (22244 40706 782166 955000) "./" "cards/" "../" "spacerust/" "guessing_game/" "scrabble/" "spacecraze/")
+
+ ("/home/jonve547/projects/spacerust/src/" (22244 40672 866773 924000) "./" "../" "main.rs")
+
+ ("/home/jonve547/projects/guessing_game/src/" (22244 38325 639409 957000) "./" "../" "main.rs")
+
+ ("/home/jonve547/projects/guessing_game/" (22244 35871 618354 433000) "./" "../" "src/" "Cargo.toml" "Cargo.lock" "target/" ".git/" ".gitignore")
+
+ ("/home/jonve547/projects/spacerust/" (22244 34835 209173 202000) "./" "../" "src/" "Cargo.toml" "Cargo.lock" "target/" ".git/" "README.md" ".gitignore")
+
+ ("/home/jonve547/.emacs.d/elpa/badwolf-theme-20160227.1154/" (22244 19237 110518 731000) "./" "../" "badwolf-theme.el" "badwolf-theme-autoloads.el" "badwolf-theme-pkg.elc" "badwolf-theme-pkg.el")
+
  ("/home/jonve547/projects/scrabble/src/" (22244 13609 308853 557000) "./" "../" "main.rs")
 
  ("/home/jonve547/projects/scrabble/" (22244 13481 214047 57000) "./" "../" "src/" "Cargo.toml" "Cargo.lock" ".git/" ".gitignore")
-
- ("/home/jonve547/projects/spacecraze/" (22244 9025 822808 909000) ".clang_complete" "GPATH" "./" "GTAGS" ".dir-locals.el" "build/" "../" "src/" "fonts/" "include/" ".git/" "sprites/" "README.md" "GRTAGS" ".gitignore" "sounds/" "Makefile" "todo.org" ".projectile" "GSYMS" "a")
-
- ("/home/jonve547/projects/" (22244 13465 738191 506000) "./" "../" "scrabble/" "spacecraze/")
-
- ("/home/jonve547/.config/i3/" (22244 9641 517450 143000) "./" "../" "config")
-
- ("/home/jonve547/" (22244 9755 524436 94000) ".xinitrc" ".fehbg" ".cache/" ".fonts/" ".dmrc" "./" ".gtkrc-2.0" ".profile" ".gvfs/" ".emacs.d/" ".Xauthority" ".ICEauthority" ".mozilla/" ".pki/" "Downloads/" "wallpapers/" "../" ".gconf/" ".gksu.lock" ".bash_logout" ".icons/" ".bash_history" ".sudo_as_admin_successful" ".bashrc" ".gitconfig" ".config/" "projects/" "Public/" "Desktop/" ".dbus/" ".ssh/" ".xsession-errors" ".xsession-errors.old" ".local/" ".gnupg/" "dotfiles/")
-
- ("/home/jonve547/.config/" (22244 8872 360089 734000) "./" "unity/" "xfce4/" "cef_user_data/" "ibus/" "update-notifier/" "../" "user-dirs.dirs" "gnome-session/" "upstart/" "gedit/" "libaccounts-glib/" "pulse/" "nautilus/" "enchant/" "dconf/" "evolution/" "Thunar/" "gtk-2.0/" "mimeapps.list" "spotify/" "user-dirs.locale" "i3/" "compiz-1/" "gtk-3.0/")
 
  ("/home/jonve547/.emacs.d/" (22244 8556 22594 134000) "themes/" "eshell/" "./" "recentf" "irony/" "ido.last" "../" "init.el~" "projectile-bookmarks.eld" "ac-comphist.dat" ".git/" "snippets/" "ido.last~" "smex-items" "auto-save-list/" "projectile.cache" ".gitignore" "session.106d818783f8de07c8145470939546068700000020980034" "elpa/" "url/" "init.el")
 
@@ -157,11 +176,7 @@
 
  ("/home/jonve547/projects/dining_philosophers/" (22230 464 506590 508000) ".git/" "Cargo.toml" ".gitignore" "src/" "./" "../")
 
- ("/home/jonve547/projects/guessing_game/src/" (22229 64480 569064 112000) "main.rs" "./" "../")
-
  ("/home/jonve547/projects/hello_world/src/" (22227 21371 135995 462000) "main.rs" "./" "../")
-
- ("/home/jonve547/projects/guessing_game/" (22227 21346 667995 658000) ".git/" "Cargo.toml" ".gitignore" "src/" "./" "../")
 
  ("/home/jonve547/projects/hello_world/" (22227 21051 568793 22000) ".git/" "Cargo.toml" ".gitignore" "src/" "./" "../")
 
