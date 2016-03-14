@@ -144,7 +144,6 @@ exec --no-startup-id spotify
 for_window [class="Firefox"] move to workspace $workspace2
 for_window [class="Spotify"] move to workspace $workspace10
 
-
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
