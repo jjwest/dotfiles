@@ -10,6 +10,7 @@ exec_always setxkbmap -option caps:escape
 
 # Screen lock
 bindsym $mod+shift+x exec lock
+exec_always xautolock -time 5 -locker lock
 
 # hide split borders
 hide_edge_borders both
