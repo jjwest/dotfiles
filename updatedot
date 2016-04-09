@@ -1,0 +1,9 @@
+#!/bin/bash
+cd
+cp -fr .config/i3/ dotfiles/
+cp -fr .emacs.d/init.el dotfiles/
+cp -fr .emacs.d/snippets/ dotfiles/
+cd dotfiles/
+git add -A
+git commit -m "Uppdaterat dotfiles"
+git push origin master
