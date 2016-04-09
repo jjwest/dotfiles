@@ -90,7 +90,9 @@
   :diminish ggtags-mode
   :init (add-hook 'prog-mode-hook 'ggtags-mode))
 
-(use-package magit :ensure t)
+(use-package magit
+  :ensure t
+  :diminish auto-revert-mode)
 
 (use-package evil-leader
   :ensure t
@@ -101,8 +103,8 @@
   (evil-leader/set-key
   "f" 'find-file
   "b" 'switch-to-buffer
+  "B" 'buffer-menu
   "k" 'kill-buffer
-  "K" 'kill-some-buffers
   "pp" 'projectile-switch-project
   "pf" 'projectile-find-file
   "pk" 'projectile-kill-buffers
