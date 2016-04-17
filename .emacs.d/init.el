@@ -44,7 +44,7 @@
   "pt" 'projectile-find-other-file
   "ss" 'split-window-horizontally
   "vv" 'split-window-vertically
-  "dw"  'delete-window
+  "dw"	'delete-window
   "do" 'delete-other-windows
   "sf" 'save-buffer
   "sa" 'save-some-buffers
@@ -60,14 +60,14 @@
 (use-package evil
   :ensure t
   :bind (:map evil-normal-state-map
-              ("j" . evil-next-visual-line)
-              ("k" . evil-previous-visual-line)
-              ("C-h" . evil-window-left)
-              ("C-j" . evil-window-down)
-              ("C-k" . evil-window-up)
-              ("C-l" . evil-window-right)
-              ("M-k" . evil-scroll-up)
-              ("M-j" . evil-scroll-down))
+	      ("j" . evil-next-visual-line)
+	      ("k" . evil-previous-visual-line)
+	      ("C-h" . evil-window-left)
+	      ("C-j" . evil-window-down)
+	      ("C-k" . evil-window-up)
+	      ("C-l" . evil-window-right)
+	      ("M-k" . evil-scroll-up)
+	      ("M-j" . evil-scroll-down))
   :config
   (evil-set-initial-state 'dired-mode 'emacs)
   (evil-set-initial-state 'magit-mode 'emacs)
@@ -85,7 +85,7 @@
   :config
   (diminish 'visual-line-mode)
   (with-eval-after-load 'undo-tree (diminish 'undo-tree-mode))
-  (with-eval-after-load  'eldoc (diminish 'eldoc-mode))
+  (with-eval-after-load	 'eldoc (diminish 'eldoc-mode))
   (with-eval-after-load 'abbrev (diminish 'abbrev-mode)))
 
 (use-package term
@@ -108,10 +108,10 @@
   :defer t
   :diminish company-mode
   :bind (("C-RET" . company-manual-begin)
-         ("<C-return>" . company-manual-begin)
-         :map company-active-map
-         ("TAB" . nil)
-         ("<tab>" . nil))
+	 ("<C-return>" . company-manual-begin)
+	 :map company-active-map
+	 ("TAB" . nil)
+	 ("<tab>" . nil))
   :init (add-hook 'prog-mode-hook (lambda () (company-mode)))
   :config
   (setq company-idle-delay 0)
@@ -124,9 +124,9 @@
   :diminish projectile-mode
   :config
   (setq projectile-other-file-alist '(("c" "h")
-                                      ("h" "c" "cc" "cpp")
-                                      ("cc" "h")
-                                      ("cpp" "h")))
+				      ("h" "c" "cc" "cpp")
+				      ("cc" "h")
+				      ("cpp" "h")))
   (projectile-global-mode))
 
 
@@ -136,8 +136,8 @@
   :diminish flycheck-mode
   :init (add-hook 'prog-mode-hook 'flycheck-mode)
   :config
- (setq flycheck-c/c++-gcc-executable "gcc-5")
- (setq flycheck-gcc-language-standard "c++14")
+  (setq flycheck-c/c++-gcc-executable "gcc-5")
+  (setq flycheck-gcc-language-standard "c++14")
   (use-package flycheck-pos-tip
     :ensure t
     :config (flycheck-pos-tip-mode)))
@@ -159,12 +159,12 @@
 ;; RUST SETTINGS
 (use-package rust-mode
   :ensure t
-  :mode ("\\.rs\\'" . rust-mode))
-
-(use-package flycheck-rust
-  :ensure t
-  :defer t
-  :init (add-hook 'rust-mode-hook (lambda () (flycheck-rust-setup))))
+  :mode ("\\.rs\\'" . rust-mode)
+  :config
+  (use-package flycheck-rust
+    :ensure t
+    :config
+    (add-hook 'rust-mode-hook 'flycheck-rust-setup)))
 
 (use-package ggtags
   :ensure t
