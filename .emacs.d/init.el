@@ -22,6 +22,7 @@
       gdb-many-windows t
       c-basic-offset 4
       c-default-style "bsd")
+(add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
 (electric-pair-mode 1)
 (show-paren-mode 1)
 (scroll-bar-mode -1)
