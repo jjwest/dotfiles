@@ -12,7 +12,7 @@ exec_always setxkbmap -option caps:escape
 
 # Screen lock
 bindsym $mod+shift+x exec lock
-exec_always xautolock -time 5 -locker lock
+exec_always xautolock -time 10 -locker lock
 
 # hide split borders
 hide_edge_borders both
@@ -68,14 +68,8 @@ bindsym $mod+e layout toggle split
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
 
-# change focus between tiling / floating windows
-bindsym $mod+space focus mode_toggle
-
-# focus the parent container
-bindsym $mod+a focus parent
-
 # key delay
-exec_always --no-startup-id xset r rate 200 40
+exec_always --no-startup-id xset r rate 200 60
 
 # Workspaces
 set $workspace1 "1. "
