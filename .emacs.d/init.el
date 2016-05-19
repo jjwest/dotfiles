@@ -17,12 +17,9 @@
       scroll-step 1
       inhibit-startup-screen t
       initial-scratch-message ""
-      tramp-default-method "ssh"
       indent-tabs-mode nil
-      gdb-many-windows t
       c-basic-offset 4
       c-default-style "bsd")
-(put 'dired-find-alternate-file 'disabled nil)
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
 (electric-pair-mode 1)
 (show-paren-mode 1)
@@ -58,7 +55,9 @@
   "x" 'ansi-term
   "jd" 'ggtags-find-definition
   "D" 'dired
-  "c" 'idomenu)
+  "c" 'idomenu
+  "n" 'narrow-to-region
+  "N" 'widen)
   (global-evil-leader-mode))
 
 (use-package evil
@@ -73,9 +72,10 @@
 	      ("M-k" . evil-scroll-up)
 	      ("M-j" . evil-scroll-down))
   :config
+  (setq evil-insert-state-cursor '(box "white")
+	evil-normal-state-cursor '(box "white"))
   (evil-set-initial-state 'dired-mode 'emacs)
   (evil-set-initial-state 'magit-mode 'emacs)
-  (setq evil-move-cursor-back nil)
   (evil-mode 1))
 
 (use-package evil-surround
@@ -182,17 +182,13 @@
     :ensure t
     :config
     (setq racer-cmd "~/.cargo/bin/racer")
-    (setq racer-rust-src-path "/home/jonve547/.rust/src")
-    (racer-mode)
+    (setq racer-rust-src-path "~/.rust/src")
+    (add-hook 'rust-mode-hook 'racer-mode)
     (eldoc-mode))
   (use-package flycheck-rust
     :ensure t
     :config
     (add-hook 'rust-mode-hook 'flycheck-rust-setup)))
-
-;; Gentlemen
-(use-package gentlemen-mode
-  :mode ("\\.gt\\'" . gentlemen-mode))
 
 (use-package ggtags
   :ensure t
@@ -260,6 +256,21 @@
     :ensure t
     :config (add-hook 'irony-mode-hook 'irony-eldoc)))
 
+(use-package neotree
+  :ensure t
+  :init
+  :config
+  (setq neo-smart-open t)
+  (setq projectile-switch-project-action 'neotree-projectile-action)
+  (add-hook 'neotree-mode-hook
+            (lambda ()
+              (define-key evil-normal-state-local-map (kbd "TAB") 'neotree-enter)
+              (define-key evil-normal-state-local-map (kbd "SPC") 'neotree-enter)
+              (define-key evil-normal-state-local-map (kbd "q") 'neotree-hide)
+              (define-key evil-normal-state-local-map (kbd "RET") 'neotree-enter)
+	      (define-key evil-normal-state-local-map (kbd "D") 'neotree-delete-node)
+	      (define-key evil-normal-state-local-map (kbd "R") 'neotree-rename-node)
+	      (define-key evil-normal-state-local-map (kbd "C") 'neotree-create-node))))
 
 ;; esc quits
 (defun minibuffer-keyboard-quit ()
@@ -291,3 +302,4 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
  '(term-color-green ((t (:background "#aeee00" :foreground "#aeee00")))))
 
 (provide 'init)
+(put 'narrow-to-region 'disabled nil)
