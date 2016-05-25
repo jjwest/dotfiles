@@ -23,7 +23,7 @@ bindsym $mod+n exec --no-startup-id pactl set-sink-volume 1 -5%
 bindsym $mod+m exec --no-startup-id pactl set-sink-mute 1 toggle
 
 # Home settings for monitors
-exec_always xrandr --output HDMI-1 --off
+exec_always xrandr --output HDMI-0 --off
 exec_always xrandr --output DVI-I-1 --mode 1920x1080 --rate 144
 
 # Wallpaper
@@ -101,6 +101,7 @@ bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace $workspace10
 
 # Auto start
+exec --no-startup-id xflux -l 58.4108
 exec --no-startup-id emacs
 exec --no-startup-id i3-msg 'workspace $workspace2; exec firefox; workspace $workspace1'
 exec --no-startup-id spotify
