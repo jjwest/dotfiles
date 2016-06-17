@@ -2,7 +2,8 @@
 set $mod Mod4
 
 # System Font
-font pango: System San Francisco Display 9
+font pango: Ubuntu Regular 10
+# font pango: System San Francisco Display 9
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -49,6 +50,10 @@ bindsym $mod+Shift+h move left
 bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
+bindsym $mod+Ctrl+Shift+h move workspace to output left
+bindsym $mod+Ctrl+Shift+l move workspace to output right
+
+
 
 # split in horizontal orientation
 bindsym $mod+b split h
@@ -72,9 +77,9 @@ bindsym $mod+Shift+space floating toggle
 exec_always --no-startup-id xset r rate 200 60
 
 # Workspaces
-set $workspace1 "1. "
-set $workspace2 "2. "
-set $workspace10 "10. "
+set $workspace1 ""
+set $workspace2 ""
+set $workspace10 ""
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1

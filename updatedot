@@ -1,8 +1,6 @@
 #!/bin/bash
 cd
-cp -fr .config/i3/ dotfiles/
-cp -fr .emacs.d/init.el dotfiles/.emacs.d/
-cp -fr .emacs.d/snippets/ dotfiles/.emacs.d/
+cp -r .config/i3/ dotfiles/
 cd dotfiles/
 git add -A
 git commit -m "Uppdaterat dotfiles"
