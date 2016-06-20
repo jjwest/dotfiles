@@ -77,9 +77,9 @@ bindsym $mod+Shift+space floating toggle
 exec_always --no-startup-id xset r rate 200 60
 
 # Workspaces
-set $workspace1 ""
-set $workspace2 ""
-set $workspace10 ""
+set $workspace1 "1"
+set $workspace2 "2"
+set $workspace10 "10"
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
