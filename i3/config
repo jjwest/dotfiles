@@ -114,6 +114,7 @@ for_window [class="Spotify"] move to workspace $workspace10
 
 # Open applications in floating mode
 for_window [class="spacecraze"] floating enable
+for_window [class="spacecraze"] move to workspace 3
 for_window [class="Lxappearance"] floating enable
 for_window [class="Testgtk"] floating enable
 
