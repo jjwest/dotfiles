@@ -2,7 +2,7 @@
 set $mod Mod4
 
 # System Font
-font pango: Ubuntu Regular 10
+font pango: Source Code Pro Semibold 10, FontAwesome 10
 # font pango: System San Francisco Display 9
 
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -10,6 +10,9 @@ floating_modifier $mod
 
 # Set caps to extra escape
 exec_always setxkbmap -option caps:escape
+
+# Disable mouse acceleration
+exec_always xset mouse 0 0
 
 # Screen lock
 bindsym $mod+shift+x exec lock
@@ -28,7 +31,7 @@ exec_always xrandr --output HDMI-0 --off
 exec_always xrandr --output DVI-I-1 --mode 1920x1080 --rate 144
 
 # Wallpaper
-exec_always feh --bg-scale /home/jonve547/wallpapers/street.jpg
+exec_always feh --bg-scale /home/jonas/wallpapers/street.jpg
 
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
@@ -77,9 +80,9 @@ bindsym $mod+Shift+space floating toggle
 exec_always --no-startup-id xset r rate 200 60
 
 # Workspaces
-set $workspace1 "1"
-set $workspace2 "2"
-set $workspace10 "10"
+set $workspace1 "1. &#xf120;"
+set $workspace2 "2. &#xf269;"
+set $workspace10 "10. &#xf1bc;"
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
