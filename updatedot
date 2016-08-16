@@ -1,6 +1,7 @@
 #!/bin/bash
 cd
 cp -r .config/i3/ dotfiles/
+cp .zshrc dotfiles/
 cd dotfiles/
 git add -A
 git commit -m "Uppdaterat dotfiles"
