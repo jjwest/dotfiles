@@ -86,6 +86,7 @@ alias g++14="g++-5 -std=c++14 -Wall -Wextra -Wold-style-cast -Woverloaded-virtua
 alias hdmi-on="xrandr --output HDMI-0 --mode 1920x1080"
 alias hdmi-off="xrandr --output HDMI-0 --off"
 alias net="nm-connection-editor"
+alias em="emacsclient -nc"
 
 man() {
     env \
