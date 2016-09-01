@@ -2,6 +2,7 @@
 cd
 cp -r .config/i3/ dotfiles/
 cp .zshrc dotfiles/
+cp -r .fonts dotfiles/
 cd dotfiles/
 git add -A
 git commit -m "Uppdaterat dotfiles"

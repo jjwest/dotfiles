@@ -30,7 +30,7 @@ exec_always xrandr --output HDMI-0 --off
 exec_always xrandr --output DVI-I-1 --mode 1920x1080 --rate 144
 
 # Wallpaper
-exec_always feh --bg-scale /home/jonas/wallpapers/street.jpg
+exec_always feh --bg-scale ~/dotfiles/street.jpg
 
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
