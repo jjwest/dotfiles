@@ -83,10 +83,11 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias g++14="g++-5 -std=c++14 -Wall -Wextra -Wold-style-cast -Woverloaded-virtual -pedantic -g"
-alias hdmi-on="xrandr --output HDMI-0 --mode 1920x1080"
-alias hdmi-off="xrandr --output HDMI-0 --off"
+alias hdmi-on="xrandr --output DVI-I-1 --mode 1920x1080 && xrandr --output HDMI-0 --mode 1920x1080"
+alias hdmi-off="xrandr --output HDMI-0 --off && xrandr --output DVI-I-1 --mode 2560x1440"
 alias net="nm-connection-editor"
 alias em="emacsclient -nc"
+alias flux="xflux -l 58.4108"
 
 man() {
     env \
