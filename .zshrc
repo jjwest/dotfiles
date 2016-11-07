@@ -87,7 +87,7 @@ alias hdmi-on="xrandr --output DVI-I-1 --mode 1920x1080 && xrandr --output HDMI-
 alias hdmi-off="xrandr --output HDMI-0 --off && xrandr --output DVI-I-1 --mode 2560x1440"
 alias net="nm-connection-editor"
 alias em="emacsclient -nc"
-alias flux="xflux -l 58.4108"
+alias flux="redshift -l 58.4108:15.6214 &"
 
 man() {
     env \
