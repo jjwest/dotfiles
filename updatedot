@@ -1,6 +1,6 @@
 #!/bin/bash
 cp ~/.zshrc dotfiles/
-cp -r ~/.fonts dotfiles/
+cp -r ~/.fonts ~/dotfiles/
 cd ~/dotfiles/
 git add -A
 git commit -m "Uppdaterat dotfiles"
