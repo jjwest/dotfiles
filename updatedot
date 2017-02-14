@@ -1,8 +1,7 @@
 #!/bin/bash
-cd
-cp .zshrc dotfiles/
-cp -r .fonts dotfiles/
-cd dotfiles/
+cp ~/.zshrc dotfiles/
+cp -r ~/.fonts dotfiles/
+cd ~/dotfiles/
 git add -A
 git commit -m "Uppdaterat dotfiles"
 git push origin master
