@@ -1,1 +1,1 @@
-My configuration files for my development environment.
+Configuration files for my development environment.
