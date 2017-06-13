@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
+  export ZSH=/home/jonas/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -83,11 +83,17 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias g++14="g++-5 -std=c++14 -Wall -Wextra -Wold-style-cast -Woverloaded-virtual -pedantic -g"
-alias hdmi-on="xrandr --output DVI-I-1 --mode 1920x1080 && xrandr --output HDMI-0 --mode 1920x1080"
-alias hdmi-off="xrandr --output HDMI-0 --off && xrandr --output DVI-I-1 --mode 2560x1440"
+alias gcc="gcc-5 -std=c99 -Wall -Wextra -pedantic -g"
+alias hdmi-on="xrandr --output DVI-D-0 --mode 1920x1080 && xrandr --output HDMI-0 --mode 1920x1080"
+alias hdmi-off="xrandr --output HDMI-0 --off && xrandr --output DVI-D-0 --mode 2560x1440"
 alias net="nm-connection-editor"
+alias emc="emacsclient -nw"
+alias flux="xflux -l 58.4108 -k 4000"
+alias bmake="bear -a make"
 alias em="emacsclient -nc"
-alias flux="redshift -l 58.4108:15.6214 &"
+
+export SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
+export PATH=$PATH:$HOME/.cargo/bin:/opt/android-studio/bin:/home/jonas/.rls/target/release:$HOME/pintos/bin
 
 man() {
     env \
