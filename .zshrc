@@ -82,14 +82,15 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias g++14="g++-5 -std=c++14 -Wall -Wextra -Wold-style-cast -Woverloaded-virtual -pedantic -g"
-alias gcc="gcc-5 -std=c99 -Wall -Wextra -pedantic -g"
+alias g++14="g++ -std=c++14 -Wall -Wextra -Wold-style-cast -Woverloaded-virtual -pedantic -g"
+alias gcc="gcc -std=c99 -Wall -Wextra -pedantic -g"
 alias hdmi-on="xrandr --output DVI-D-0 --mode 1920x1080 && xrandr --output HDMI-0 --mode 1920x1080"
 alias hdmi-off="xrandr --output HDMI-0 --off && xrandr --output DVI-D-0 --mode 2560x1440"
 alias flux="xflux -l 58.4108 -k 4000"
 alias bmake="bear -a make"
-alias em="emacsclient -nc"
-alias sem="SUDO_EDITOR=\"emacsclient -nc\" sudo -e"
+alias em='emacsclient -a "" -nc'
+alias sem="SUDO_EDITOR='emacsclient -a "" -nc' sudo -e"
+
 
 export SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
 export PATH=$PATH:$HOME/.cargo/bin:/opt/android-studio/bin:/home/jonas/.rls/target/release:$HOME/pintos/bin
