@@ -93,7 +93,7 @@ alias sem="SUDO_EDITOR='emacsclient -a "" -nc' sudo -e"
 
 
 export SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
-export PATH=$PATH:$HOME/.cargo/bin:/opt/android-studio/bin:/home/jonas/.rls/target/release:$HOME/pintos/bin
+export PATH=$PATH:$HOME/.cargo/bin:/opt/android-studio/bin:$HOME/pintos/bin
 
 man() {
     env \
