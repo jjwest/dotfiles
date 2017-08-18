@@ -89,11 +89,12 @@ alias hdmi-off="xrandr --output HDMI-0 --off && xrandr --output DVI-D-0 --mode 2
 alias flux="xflux -l 58.4108 -k 4000"
 alias bmake="bear -a make"
 alias em='emacsclient -a "" -nc'
-alias sem="SUDO_EDITOR='emacsclient -a "" -nc' sudo -e"
+alias sem="SUDO_EDITOR='emacsclient -a \"\" -nc' sudo -e"
+alias ls="exa"
 
 
 export SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
-export PATH=$PATH:$HOME/.cargo/bin:/opt/android-studio/bin:$HOME/pintos/bin
+export PATH=$PATH:$HOME/.cargo/bin:/opt/android-studio/bin:/home/jonas/.rls/target/release:$HOME/pintos/bin
 
 man() {
     env \
