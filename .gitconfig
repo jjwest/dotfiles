@@ -1,5 +1,7 @@
 [user]
-	name = Jonas Vestlund
-	email = jonve547@student.liu.se
+	name = Jonas Westlund
+	email = jonaswestlund101@gmail.com
 [core]
 	excludesfile = /home/jonas/.gitignore_global
+[pull]
+	rebase = true

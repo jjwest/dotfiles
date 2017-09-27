@@ -1,4 +1,5 @@
 #!/bin/bash
+
 cp ~/.zshrc dotfiles/
 cp -r ~/.fonts ~/dotfiles/
 cd ~/dotfiles/
