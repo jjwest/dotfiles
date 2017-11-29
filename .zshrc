@@ -92,6 +92,8 @@ alias em='emacsclient -a "" -nc'
 alias sem="SUDO_EDITOR='emacsclient -a \"\" -nc' sudo -e"
 alias ls="exa"
 
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow -g "!{.git,node_modules}/*" 2> /dev/null'
 
 export SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
 export PATH=$PATH:$HOME/.cargo/bin:/opt/android-studio/bin:/home/jonas/.rls/target/release:$HOME/pintos/bin
