@@ -89,7 +89,7 @@ alias hdmi-off="xrandr --output HDMI-0 --off && xrandr --output DVI-D-0 --mode 2
 alias flux="xflux -l 58.4108 -k 4000"
 alias bmake="bear -a make"
 alias em='emacsclient -a "" -nc'
-alias sem="SUDO_EDITOR='emacsclient -a \"\" -nc' sudo -e"
+alias sem="SUDO_EDITOR='emacsclient -a \"\" -c' sudo -e"
 alias ls="exa"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
