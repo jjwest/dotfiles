@@ -84,11 +84,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias g++14="g++ -std=c++14 -Wall -Wextra -Wold-style-cast -Woverloaded-virtual -pedantic -g"
 alias gcc="gcc -std=c99 -Wall -Wextra -pedantic -g"
-alias hdmi-on="xrandr --output DVI-D-0 --mode 1920x1080 && xrandr --output HDMI-0 --mode 1920x1080"
-alias hdmi-off="xrandr --output HDMI-0 --off && xrandr --output DVI-D-0 --mode 2560x1440"
-alias flux="xflux -l 58.4108 -k 4000"
-alias bmake="bear -a make"
-alias em='emacsclient -a "" -nc'
 alias sem="SUDO_EDITOR='emacsclient -a \"\" -c' sudo -e"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
