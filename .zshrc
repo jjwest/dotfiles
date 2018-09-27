@@ -83,6 +83,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias g++14="g++ -std=c++14 -Wall -Wextra -Wold-style-cast -Woverloaded-virtual -pedantic -g"
+alias g++17="g++ -std=c++17 -Wall -Wextra -Wold-style-cast -Woverloaded-virtual -pedantic -g"
 alias gcc="gcc -std=c99 -Wall -Wextra -pedantic -g"
 alias sem="SUDO_EDITOR='emacsclient -a \"\" -c' sudo -e"
 
